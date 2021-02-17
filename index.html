@@ -11,13 +11,15 @@
         <h1>Expense Tracker</h1>
     </header>
     <h3>Add a new item:</h3>
+    <div class="row1">
     <div class="name-container"> <p>Name:</p>
     <input type="text" placeholder="The expense's name" name="name" id="name"></div>
     <div class="date-container"> <p>Date:</p>
     <input type="date" placeholder="dd/mm/yyyy" name="date" id="date"></div>
     <div class="amount-container"> <p>Amount:</p>
     <input type="number" placeholder="Amount in $$" name="amount" id="amount"></div>
-
+</div>
+<div class="row2">
     <input type="button" id="submit" value="Add Expense">
     <table id="table">
         <tr class="main">
@@ -28,6 +30,7 @@
     </table>
 
     <input type="button" id="reset" value="Reset List">
+</div>
     <script src="app.js"></script>
 </body>
 </html>

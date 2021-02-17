@@ -1,11 +1,41 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
+h3 {
+  text-align: center;
+}
 td,
 th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+body {
+  background: #362fa3;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row1 div {
+  padding: 50px;
+}
+
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
