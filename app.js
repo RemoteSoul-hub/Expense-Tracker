@@ -3,9 +3,11 @@ let date = document.getElementById('date');
 let amount = document.getElementById('amount');
 let add = document.getElementById('submit');
 let table = document.getElementById('table');
-
+let reset = document.getElementById('reset');
 
 /// Event listener to Name
+//Event Listener to Date
+// Event listener to Amount
 function addItem(e) {
     e.preventDefault();
     // Get value of input
@@ -21,14 +23,14 @@ function addItem(e) {
     cell2.innerHTML = newAmount;
 }
 
-//Event Listener to Date
 
-
-
-// Event listener to Amount
 
 add.addEventListener('click', addItem);
-//Submit Function
-
-
-// Add new Tr to table
+reset.addEventListener('click', clearAll);
+// Clear / Reset function
+function clearAll(e) {
+    e.preventDefault();
+    while (table.rows.length > 1) {
+        table.deleteRow(1);
+      }
+}
